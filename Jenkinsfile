@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'cd src; make; cd ..'
+                sh 'pwd; cd src; make; cd ..'
             }
         }
     }
