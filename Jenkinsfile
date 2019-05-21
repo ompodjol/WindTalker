@@ -16,5 +16,13 @@ pipeline {
 		echo '{Testing binary ended}'
 	    }
 	}
+	stage('Make Clean') {
+            steps {
+                echo '{Deleting binary started}'
+                sh 'rm hellomake'
+                echo '{Deleting binary ended}'
+            }
+        }
+
     }
 }
