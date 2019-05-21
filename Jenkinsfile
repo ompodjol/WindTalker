@@ -19,7 +19,7 @@ pipeline {
 	stage('Make Clean') {
             steps {
                 echo '{Deleting binary started}'
-                sh 'rm hellomake'
+                sh 'cd src; rm hellomake'
                 echo '{Deleting binary ended}'
             }
         }
