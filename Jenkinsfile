@@ -27,7 +27,7 @@ pipeline {
 		sh 'git branch'
 		sh 'git pull'
 		sh 'ls; pwd'
-		sh 'git push'
+		sh 'git push origin master'
                 echo '{Deleting binary ended}'
             }
 	}
