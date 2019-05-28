@@ -16,15 +16,28 @@ pipeline {
 		echo '{Testing binary ended}'
 	    }
 	}
-	stage('Make Clean') {
+	stage('Push Binary') {
+            steps {
+                echo '{Pushing binary started}'
+                sh 'cd src; ls; git branch -a'
+		sh 'git checkout master'
+		sh 'git branch; git add hellomake'
+		sh 'git commit -m "Add binary file"'
+		sh 'git push origin master'
+                echo '{Deleting binary ended}'
+            }
+	}
+	 stage('Remove Binary') {
             steps {
                 echo '{Deleting binary started}'
                 sh 'cd src; ls; git branch -a'
-		sh 'git checkout master'
-		sh 'git branch; git rm -r hellomake'
-		sh 'git commit -m "Remove binary file"; git push origin master'
+                sh 'git checkout master'
+                sh 'git branch; git rm -r hellomake'
+                sh 'git commit -m "Remove binary file"'
+		sh 'git push origin master'
                 echo '{Deleting binary ended}'
             }
+
         }
 
     }
