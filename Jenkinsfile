@@ -22,23 +22,11 @@ pipeline {
 	stage('Push Binary') {
             steps {
                 echo '{Pushing binary started}'
-                sh 'cd src; ls; git branch -a'
-		sh 'git checkout master'
-		sh 'git branch'
-		sh 'git pull'
-		sh 'ls; pwd'
-		sh 'git push origin master'
-                echo '{Deleting binary ended}'
-            }
+		echo '{Pushing binary ended}'
 	}
 	 stage('Remove Binary') {
             steps {
                 echo '{Deleting binary started}'
-                sh 'cd src; ls; git branch -a'
-                sh 'git checkout master'
-                sh 'git branch; git rm -r hellomake'
-                sh 'git commit -m "Remove binary file"'
-		sh 'git push origin master'
                 echo '{Deleting binary ended}'
             }
 
