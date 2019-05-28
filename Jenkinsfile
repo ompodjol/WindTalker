@@ -5,7 +5,10 @@ pipeline {
         stage('Build Source Code') { 
             steps {
 		echo '{Running make started}'
-                sh 'pwd; cd src; make; cd ..'
+                sh 'pwd; cd src'
+		sh 'git checkout master'
+		sh 'git pull'
+		sh 'make; cd ..'
 		echo '{Running make ended}'
             }
         }
