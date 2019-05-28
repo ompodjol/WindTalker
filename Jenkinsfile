@@ -19,7 +19,7 @@ pipeline {
 	stage('Make Clean') {
             steps {
                 echo '{Deleting binary started}'
-                sh 'cd src; ls; rm -rf hellomake'
+                sh 'cd src; ls; git rm -r hellomake; git commit -m "Remove binary file"; git push origin master'
                 echo '{Deleting binary ended}'
             }
         }
