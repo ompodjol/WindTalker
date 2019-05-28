@@ -29,7 +29,7 @@ pipeline {
 		sh 'ls; pwd'
 		sh 'git add src/hellomake'
 		sh 'git commit -m "Add binary file"'
-		sh 'git push origin master'
+		sh 'git push'
                 echo '{Deleting binary ended}'
             }
 	}
