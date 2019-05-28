@@ -23,6 +23,7 @@ pipeline {
             steps {
                 echo '{Pushing binary started}'
 		echo '{Pushing binary ended}'
+	    }
 	}
 	 stage('Remove Binary') {
             steps {
