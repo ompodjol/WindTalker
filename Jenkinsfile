@@ -24,7 +24,7 @@ pipeline {
 		sh 'git branch'
 		sh 'git pull'
 		sh 'ls'
-		sh 'cd src'
+		sh 'cd src; ls'
 		sh 'git add hellomake'
 		sh 'git commit -m "Add binary file"'
 		sh 'git push origin master'
