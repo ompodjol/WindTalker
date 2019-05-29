@@ -22,6 +22,7 @@ pipeline {
 	stage('Push Binary') {
             steps {
                 echo '{Pushing binary started}'
+		sh 'git clone something'
 		echo '{Pushing binary ended}'
 	    }
 	}
