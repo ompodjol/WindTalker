@@ -38,14 +38,14 @@ int main(void)
         double equals_equals_3 = 8 == +8;
         printf("equals_equals_3 = 8 == +8 is %f\n", equals_equals_3);
 
-        double divide = 3 / 5;
-        printf("divide = 3 / 5 is %f\n", divide);
+        double divide = 3 / 7;
+        printf("divide = 3 / 7 is %f\n", divide);
 
-        double divide_2 = 3.0 / 5;
-        printf("divide_2 = 3.0 / 5 is %f\n", divide_2);
+        double divide_2 = 7 / 3;
+        printf("divide_2 = 7 / 3 is %f\n", divide_2);
 
-        double divide_3 = 3 / 5.0;
-        printf("divide_3 = 3 / 5.0 is %f\n", divide_3);
+        double divide_3 = 5 / 2.0;
+        printf("divide_3 = 5 / 2.0 is %f\n", divide_3);
  
 	return 0;
 }
