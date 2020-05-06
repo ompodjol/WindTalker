@@ -14,9 +14,10 @@ int main(void)
 }
 void sinecosine(double fvalue)        //function definition
 {
-    double sineval,cosineval;
-    sineval=sin(fvalue);
-    cosineval=cos(fvalue);
-    printf("sine value for %lf  \t %lf ",fvalue,sineval);
-    printf("\tcosine value for %lf  \t %lf \n",fvalue,cosineval);
+//    double sineval,cosineval;
+//    sineval=sin(fvalue);
+//    cosineval=cos(fvalue);
+//    printf("sine value for %lf  \t %lf ",fvalue,sineval);
+//    printf("\tcosine value for %lf  \t %lf \n",fvalue,cosineval);
+    printf("Hello\t\tWorld\n");
 }
