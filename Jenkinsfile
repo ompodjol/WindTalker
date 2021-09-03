@@ -1,7 +1,11 @@
 properties([pipelineTriggers([githubPush()])])
 
 pipeline {
-    agent txandolnx13
+    agent {
+        node {
+            label 'txandolnx13'
+        
+    }
 
     stages {
         stage('Build source Code') { 
