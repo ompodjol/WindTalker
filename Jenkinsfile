@@ -8,7 +8,7 @@ pipeline {
     }
 
     stages {
-        stage('Build Source code') { 
+        stage('Build Source Code') { 
             steps {
 		echo '{Running make started}'
                 sh 'pwd; rm -rf src/hellomake'
