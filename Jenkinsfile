@@ -2,7 +2,7 @@ pipeline {
     agent txandolnx13
 
     stages {
-        stage('Build Source Code') { 
+        stage('Build source Code') { 
             steps {
 		echo '{Running make started}'
                 sh 'pwd; rm -rf src/hellomake'
