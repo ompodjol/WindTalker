@@ -1,5 +1,5 @@
 pipeline {
-    agent any 
+    agent txandolnx13 
 
     stages {
         stage('Build Source Code') { 
